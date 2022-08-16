@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #c9000a;
+}
+
+/*Title*/
+.titleBar{
+    display:flex;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.etch{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.magic{
+    padding-right: 50px;
+}
+
+.screen{
+    padding-left: 50px;
+}
+
+/* Actual screen */
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 800px;
+    background-color: #acaca4;
+}
+
+.pixel {
+    width: 50px;
+    height: 50px;
+}
