@@ -32,16 +32,54 @@ body {
     padding-left: 50px;
 }
 
+/*Buttons*/
+.buttons{
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizebtn{
+    margin-left: 50px;
+}
+
+.resetbtn{
+    
+}
+
 /* Actual screen */
 
-.container {
+.pixelScreen {
     display: flex;
-    width: 800px;
-    height: 800px;
-    background-color: #acaca4;
+    flex-wrap: wrap;
+    margin: 0px 50px 50px;
 }
 
 .pixel {
     width: 50px;
     height: 50px;
+    background-color: #acaca4;
+}
+
+.hover {
+    background-color: black;
+}
+
+.topLeftPixel {
+    border-top-left-radius: 25px;
+}
+
+.topRightPixel{
+    border-top-right-radius: 25px;
+}
+
+.botLeftPixel{
+    border-bottom-left-radius: 25px;
+}
+
+.botRightPixel{
+    border-bottom-right-radius: 25px;
 }
