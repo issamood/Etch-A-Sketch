@@ -11,7 +11,6 @@ body {
     display:flex;
     width: 100%;
     padding-top: 15px;
-    padding-bottom: 15px;
     justify-content: center;
     align-items: center;
     color: gold;
@@ -42,12 +41,12 @@ body {
     align-items: center;
 }
 
-.sizebtn{
+.sizeBtn{
     margin-left: 50px;
 }
 
-.resetbtn{
-    
+.resetBtn{
+
 }
 
 /* Actual screen */
@@ -59,8 +58,8 @@ body {
 }
 
 .pixel {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     background-color: #acaca4;
 }
 
