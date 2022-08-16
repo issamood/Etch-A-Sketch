@@ -10,9 +10,9 @@ createCanvas(pixelAmount);
 
 //Set screen size
 function setCanvasSize(canvasSize){
-    const pixelScreen = document.querySelector('.pixelScreen');
-    pixelScreen.style.maxWidth = ((20*canvasSize) + "px");
-    pixelScreen.style.maxHeight = ((20*canvasSize) + "px");
+    const screen = document.querySelector('.pixelScreen');
+    screen.style.maxWidth = ((20*canvasSize) + "px");
+    screen.style.maxHeight = ((20*canvasSize) + "px");
 }
 
 //Creates canvas based on how much pixels is inputted
