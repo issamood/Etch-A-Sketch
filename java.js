@@ -2,7 +2,6 @@
 const pixelScreen = document.querySelector('.pixelScreen');
 const resetBtn = document.querySelector('.resetBtn');
 const sizeBtn = document.querySelector('.sizeBtn')
-const pixels = document.querySelectorAll('.pixel');
 
 //Create default canvas
 let pixelAmount = 32;

@@ -42,11 +42,35 @@ body {
 }
 
 .sizeBtn{
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: 550px;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 20px;
 }
 
 .resetBtn{
+    margin-left: 550px;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+}
 
+.buttons active {
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
 
 /* Actual screen */
