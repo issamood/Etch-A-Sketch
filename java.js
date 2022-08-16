@@ -10,9 +10,9 @@ createCanvas(pixelAmount);
 
 //Set screen size
 function setCanvasSize(canvasSize){
-    const screen = document.querySelector('.pixelScreen');
-    screen.style.maxWidth = ((20*canvasSize) + "px");
-    screen.style.maxHeight = ((20*canvasSize) + "px");
+    const screenSize = document.querySelector('.pixelScreen');
+    screenSize.style.maxWidth = ((10*canvasSize) + "px");
+    screenSize.style.maxHeight = ((10*canvasSize) + "px");
 }
 
 //Creates canvas based on how much pixels is inputted
@@ -58,7 +58,19 @@ resetBtn.addEventListener('click', function(e){
 //delete grid
 sizeBtn.addEventListener('click', function(e){
     const pixels = document.querySelectorAll('.pixel');
-    pixelAmount = prompt('Please enter a number for canvas width and height: ')
+    let badInput = true;
+    while(badInput){
+        pixelAmount = prompt('Please enter a number for canvas width and height (max: 100x100): ')
+        if (pixelAmount > 100){
+            alert('Please enter a size less than 100');
+        }
+        else if (pixelAmount > 0 && pixelAmount <= 100){
+            badInput = false;
+        }
+        else{
+            alert('Input error, try again')
+        }
+    }
     pixels.forEach(pixel => {
         pixel.remove();
     })
